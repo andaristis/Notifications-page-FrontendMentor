@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>Notifications</h1>
+    <span class="contadorNotificaciones">3</span>
+  </div>
+  <span class="all">Mark all as read</span>
+</div>
+
+
+<div class="contenedor-notificacion no-leida">
+  <img src="assets/images/avatar-mark-webber.webp" alt="">
+  <div> 
+    <p>
+        <strong>Mark Webber</strong> reacted to your recent post <strong class="bold-gris">My first tournament today!</strong>
+    </p>
+  <span>1m ago</span>
+</div>
+</div>
+<div class="contenedor-notificacion no-leida">
+  <img src="assets/images/avatar-angela-gray.webp" alt="">
+  <div> 
+    <p>
+        <strong>Angela Gray</strong> followed you</p>
+  <span>5m ago</span>
+</div>
+</div>
+  
+<div class="contenedor-notificacion no-leida">
+  <img src="assets/images/avatar-jacob-thompson.webp" alt="">
+  <div> 
+    <p>
+        <strong>Jacob Thompson</strong> has joined your group <strong class="bold-gris">Chess Club</strong>
+  </p>
+  <span>1 day ago</span>
+</div>
+</div>
+
+<div class="contenedor-notificacion notificacion-mensaje">
+  <div> 
+    <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="">
+    <div>
+      <p>
+          <strong>Rizky Hasanuddin</strong> sent you a private message
+      </p>
+      <span>5 days ago</span>
+    </div>
+  </div>
+<div class="mensaje">
+  <h >Hello, thanks for setting up the <strong class="bold-gris">Chess Club</strong>. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</h>
+</div>
+</div>
+  
+<div class="contenedor-notificacion notificacion-imagen-comentada">
+  <img src="assets/images/avatar-kimberly-smith.webp" alt="">
+  <div> 
+    <div>
+      <p>
+        <strong>Kimberly Smith</strong> commented on your picture
+      </p>
+    </div>
+    <span>1 week ago</span>
+  </div>
+  <img src="assets/images/image-chess.webp" alt="">
+</div>
+
+<div class="contenedor-notificacion">
+  <img src="assets/images/avatar-nathan-peterson.webp" alt="">
+  <div> 
+    <p>
+        <strong>Nathan Peterson</strong> reacted to your recent post <strong class="bold-gris">5 end-game strategies to increase your win rate</strong>
+  </p>
+  <span>2 weeks ago</span>
+</div>
+</div>
+
+<div class="contenedor-notificacion">
+  <img src="assets/images/avatar-anna-kim.webp" alt="">
+  <div> 
+    <p>
+        <strong>Anna Kim</strong> left the group <strong class="bold-gris">Chess Club</strong>
+  </p>
+  <span>2 weeks ago</span>
+</div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

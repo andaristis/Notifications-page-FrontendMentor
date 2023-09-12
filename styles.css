@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root{
+    --rojo: hsl(1, 90%, 64%);
+    --azul: hsl(219, 85%, 26%);
+    --blanco: hsl(0, 0%, 100%);
+    --gris-azulado-muyClaro: hsl(210, 60%, 98%);
+    --gris-azulado-claro-1: hsl(211, 68%, 94%);
+    --gris-azulado-claro-2: hsl(205, 33%, 90%);
+    --gris-azulado: hsl(219, 14%, 63%);
+    --gris-azulado-oscuro: hsl(219, 12%, 42%);
+    --gris-azulado-muyOscuro: hsl(224, 21%, 14%);
+
+    --font-primario: 'Plus Jakarta Sans', sans-serif;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--blanco);
+        font-family: var(--font-primario);
+        width: 100%;
+        height: 60px;
+    }
+    .header div{
+        display: flex;
+        flex:1;
+        height:100%;
+        flex-direction:row;
+        margin-left: 1rem;
+        font-size: 0.7rem;
+        align-items: center;
+    }
+    .header div span{
+        font-size: 1rem;
+        background-color: var(--azul);
+        width:2rem;
+        margin-left: 0.6rem;
+        border-radius: 5px;
+        height: 45%;
+        display: flex;
+        font-weight: 800;
+        color: var(--blanco);
+        justify-content: center;
+        align-items: center;
+    }
+    .header span{
+        color: var(--gris-azulado-oscuro);
+        width:auto;
+        text-align: right;
+        margin-right: 1rem;
+        cursor: pointer;
+        border: 2px solid transparent;
+    }
+
+    .contenedor-notificacion{
+        height: auto;
+        display: flex;
+        margin: 1rem;
+        padding: 1rem;
+        font-family: var(--font-primario);
+        color: var(--gris-azulado-oscuro);
+        border: 2px solid transparent;
+        border-right-width: 6px;
+        border-bottom-width: 6px;
+    }
+    .no-leida{
+        background-color: var(--gris-azulado-claro-2);
+        border: 2px solid transparent;
+        border-right-width: 6px;
+        border-bottom-width: 6px;
+        
+    }
+    .notificacion-mensaje {
+        flex-direction: column;
+    }
+    .notificacion-mensaje div:first-child{
+        display: flex;
+    }
+    .notificacion-imagen-comentada div div{
+        display: flex;
+    }
+    .mensaje{
+        margin: 1rem 1rem .5rem 5rem;
+        border: 1px solid var(--gris-azulado-claro-2);
+        border-radius: 5px;
+        padding: .5rem;
+ 
+    }
+    
+    strong{
+        color: black;
+          font-weight: 800;}
+    
+    .contenedor-notificacion span:last-child{
+        color: var(--gris-azulado);
+    }
+    .notificacion-imagen-comentada img:last-child{
+        margin-left: 1rem;
+    }
+
+    .notificacion-imagen-comentada > div > div > p{
+        margin-right: 9.67px;
+    }
+    img{
+        height: 40px;
+        margin-right:1rem ;
+    }
+    .bold-gris{
+        color:var(--gris-azulado-oscuro);
+    }
+
+    .no-leida > div > p::after, .no-leida > div > div > p::after{
+        content: "●";
+        color: rgb(164, 65, 23);
+        margin-left: 0.2rem ;
+        display: inline-block;
+        margin-right: 0;
+    }
+  
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    
+    .header > span:last-child:hover{
+        color: var(--azul);
+    }
+    .mensaje:hover {
+        background-color: var(--gris-azulado-claro-2);
+        
+     }
+   .bold-gris:hover, strong:hover{
+    color: var(--azul);
+    cursor: pointer;
+   }
+
+   .notificacion-imagen-comentada img:last-child:hover, .header > div > span:last-child:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  }
+  .contenedor-notificacion:hover{
+    border: 2px solid var(--gris-azulado-claro-2);
+    border-right-width: 6px;
+    border-bottom-width: 6px;
+}
+  .no-leida:hover{
+    border: 2px solid var(--azul);
+    border-right-width: 6px;
+    border-bottom-width: 6px;
+  }
+  }
+  
